@@ -1,0 +1,324 @@
+```html
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THIAGO STORE  - Recargas Free Fire</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter & Orbitron -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&family=Orbitron:wght@600;800;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#00f0ff',
+                            purple: '#7000ff',
+                            gold: '#ffd700',
+                            darkBg: '#0b0d17',
+                            cardBg: '#15192b',
+                            cardBorder: '#232a45'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        gamer: ['Orbitron', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #0b0d17;
+            color: #e2e8f0;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(112, 0, 255, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(0, 240, 255, 0.15) 0%, transparent 40%);
+            background-attachment: fixed;
+        }
+
+        .neon-border-blue {
+            box-shadow: 0 0 15px rgba(0, 240, 255, 0.2);
+        }
+        .neon-border-blue:hover, .neon-border-blue.selected {
+            box-shadow: 0 0 25px rgba(0, 240, 255, 0.6);
+            border-color: #00f0ff;
+        }
+
+        .neon-border-purple {
+            box-shadow: 0 0 15px rgba(112, 0, 255, 0.2);
+        }
+        .neon-border-purple:hover, .neon-border-purple.selected {
+            box-shadow: 0 0 25px rgba(112, 0, 255, 0.6);
+            border-color: #7000ff;
+        }
+
+        .neon-text-gold {
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        }
+
+        .glow-btn {
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            box-shadow: 0 0 20px rgba(37, 211, 102, 0.5);
+            transition: all 0.3s ease;
+        }
+
+        .glow-btn:hover {
+            box-shadow: 0 0 30px rgba(37, 211, 102, 0.8);
+            transform: translateY(-2px);
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0b0d17;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #232a45;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #00f0ff;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col font-sans antialiased pb-12">
+
+    <header class="sticky top-0 z-50 bg-brand-darkBg/90 backdrop-blur-md border-b border-brand-cardBorder px-4 py-3">
+        <div class="max-w-4xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-purple to-brand-blue flex items-center justify-center text-white font-black text-xl shadow-lg shadow-brand-blue/30 font-gamer">
+                    TS
+                </div>
+                <div>
+                    <h1 class="font-gamer font-black text-xl tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-brand-blue via-white to-brand-purple">
+                        THIAGO STORE 
+                    </h1>
+                    <p class="text-xs text-amber-400 font-semibold neon-text-gold">Tu tienda de confianza FF </p>
+                </div>
+            </div>
+            <a href="#checkout" class="bg-brand-purple/20 border border-brand-purple/50 text-brand-blue px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-brand-purple/40 transition">
+                <i class="fa-solid fa-cart-shopping mr-1"></i> Ir a Cargar
+            </a>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 pt-6 space-y-10 flex-grow w-full">
+
+        <section class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-brand-cardBg via-brand-darkBg to-brand-cardBg border border-brand-cardBorder p-6 md:p-8 shadow-2xl">
+            <div class="absolute top-0 right-0 -mt-8 -mr-8 w-48 h-48 bg-brand-blue/10 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="space-y-3 text-center md:text-left">
+                    <span class="bg-amber-500/20 text-amber-300 border border-amber-500/30 text-xs px-3 py-1 rounded-full font-bold uppercase tracking-wider inline-block">
+                         Entrega Inmediata por ID
+                    </span>
+                    <h2 class="text-2xl md:text-3xl font-black font-gamer text-white">
+                        RECARGA DIAMANTES EN <span class="text-brand-blue">FREE FIRE</span>
+                    </h2>
+                    <p class="text-sm text-gray-300 max-w-md">
+                        Selecciona tus paquetes de Diamantes, Pases o Cajas al mejor precio de Argentina. 100% Seguro y Rápido.
+                    </p>
+                </div>
+                <div class="flex flex-col items-center gap-2 bg-brand-darkBg/60 p-4 rounded-xl border border-brand-cardBorder text-center">
+                    <i class="fa-solid fa-shield-halved text-3xl text-brand-blue mb-1"></i>
+                    <span class="text-xs font-bold text-gray-200">Garantía de Entrega</span>
+                    <span class="text-[10px] text-gray-400">Atención personalizada por WhatsApp</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="diamantes" class="space-y-4">
+            <div class="flex items-center gap-2 border-b border-brand-cardBorder pb-2">
+                <i class="fa-solid fa-gem text-brand-blue text-2xl"></i>
+                <h2 class="font-gamer font-bold text-xl md:text-2xl text-white tracking-wide">
+                    DIAMANTES INFINITOS
+                </h2>
+            </div>
+
+            <div class="grid gap-3" id="diamantes-list">
+                
+                <div onclick="selectProduct('DIAMANTES INFINITOS', '100 Diamantes + 10 Bono', 1290, this)" class="product-card cursor-pointer bg-brand-cardBg border border-brand-cardBorder rounded-xl p-4 flex items-center justify-between transition-all duration-300 hover:border-brand-blue neon-border-blue">
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 rounded-lg bg-blue-950/60 border border-brand-blue/30 flex items-center justify-center text-brand-blue text-xl">
+                            
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-white text-base">100 Diamantes <span class="text-xs bg-brand-purple/40 text-purple-300 px-2 py-0.5 rounded border border-purple-500/30">+10 Bono</span></h3>
+                            <p class="text-xs text-gray-400">Recarga directa por ID</p>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <span class="font-black text-lg text-emerald-400 font-gamer">$1.290</span>
+                        <p class="text-[10px] text-brand-blue font-semibold">Tocar para Elegir</p>
+                    </div>
+                </div>
+
+                <div onclick="selectProduct('DIAMANTES INFINITOS', '310 Diamantes + 31 Bono', 3770, this)" class="product-card cursor-pointer bg-brand-cardBg border border-brand-cardBorder rounded-xl p-4 flex items-center justify-between transition-all duration-300 hover:border-brand-blue neon-border-blue">
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 rounded-lg bg-blue-950/60 border border-brand-blue/30 flex items-center justify-center text-brand-blue text-xl">
+                            
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-white text-base">310 Diamantes <span class="text-xs bg-brand-purple/40 text-purple-300 px-2 py-0.5 rounded border border-purple-500/30">+31 Bono</span></h3>
+                            <p class="text-xs text-gray-400">Recarga directa por ID</p>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <span class="font-black text-lg text-emerald-400 font-gamer">$3.770</span>
+                        <p class="text-[10px] text-brand-blue font-semibold">Tocar para Elegir</p>
+                    </div>
+                </div>
+
+                <div onclick="selectProduct('DIAMANTES INFINITOS', '520 Diamantes + 52 Bono', 6200, this)" class="product-card cursor-pointer bg-brand-cardBg border border-brand-cardBorder rounded-xl p-4 flex items-center justify-between transition-all duration-300 hover:border-brand-blue neon-border-blue">
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 rounded-lg bg-blue-950/60 border border-brand-blue/30 flex items-center justify-center text-brand-blue text-xl">
+                            
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-white text-base">520 Diamantes <span class="text-xs bg-brand-purple/40 text-purple-300 px-2 py-0.5 rounded border border-purple-500/30">+52 Bono</span></h3>
+                            <p class="text-xs text-gray-400">Recarga directa por ID</p>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <span class="font-black text-lg text-emerald-400 font-gamer">$6.200</span>
+                        <p class="text-[10px] text-brand-blue font-semibold">Tocar para Elegir</p>
+                    </div>
+                </div>
+
+                <div onclick="selectProduct('DIAMANTES INFINITOS', '1060 Diamantes + 106 Bono', 11210, this)" class="product-card cursor-pointer bg-brand-cardBg border border-brand-cardBorder rounded-xl p-4 flex items-center justify-between transition-all duration-300 hover:border-brand-blue neon-border-blue">
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 rounded-lg bg-blue-950/60 border border-brand-blue/30 flex items-center justify-center text-brand-blue text-xl">
+                            
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-white text-base">1060 Diamantes <span class="text-xs bg-brand-purple/40 text-purple-300 px-2 py-0.5 rounded border border-purple-500/30">+106 Bono</span></h3>
+                            <p class="text-xs text-gray-400">Recarga directa por ID</p>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <span class="font-black text-lg text-emerald-400 font-gamer">$11.210</span>
+                        <p class="text-[10px] text-brand-blue font-semibold">Tocar para Elegir</p>
+                    </div>
+                </div>
+
+                <div onclick="selectProduct('DIAMANTES INFINITOS', '2160 Diamantes + 218 Bono', 23000, this)" class="product-card cursor-pointer bg-brand-cardBg border border-brand-cardBorder rounded-xl p-4 flex items-center justify-between transition-all duration-300 hover:border-brand-blue neon-border-blue">
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 rounded-lg bg-blue-950/60 border border-brand-blue/30 flex items-center justify-center text-brand-blue text-xl">
+                            
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-white text-base">2160 Diamantes <span class="text-xs bg-brand-purple/40 text-purple-300 px-2 py-0.5 rounded border border-purple-500/30">+218 Bono</span></h3>
+                            <p class="text-xs text-gray-400">Recarga directa por ID</p>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <span class="font-black text-lg text-emerald-400 font-gamer">$23.000</span>
+                        <p class="text-[10px] text-brand-blue font-semibold">Tocar para Elegir</p>
+                    </div>
+                </div>
+
+                <div onclick="selectProduct('DIAMANTES INFINITOS', '5600 Diamantes + 560 Bono', 55400, this)" class="product-card cursor-pointer bg-brand-cardBg border border-amber-500/40 rounded-xl p-4 flex items-center justify-between transition-all duration-300 hover:border-amber-400 shadow-lg shadow-amber-500/10">
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 rounded-lg bg-amber-950/60 border border-amber-500/40 flex items-center justify-center text-amber-400 text-xl">
+                            
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2">
+                                <h3 class="font-bold text-white text-base">5600 Diamantes</h3>
+                                <span class="text-[10px] bg-amber-500 text-black font-extrabold px-1.5 py-0.5 rounded">POPULAR</span>
+                            </div>
+                            <p class="text-xs text-amber-300/80">+560 Bono Extra</p>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <span class="font-black text-lg text-amber-400 font-gamer">$55.400</span>
+                        <p class="text-[10px] text-amber-300 font-semibold">Tocar para Elegir</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="pases" class="space-y-4">
+            <div class="flex items-center gap-2 border-b border-brand-cardBorder pb-2">
+                <i class="fa-solid fa-ticket text-brand-purple text-2xl"></i>
+                <h2 class="font-gamer font-bold text-xl md:text-2xl text-white tracking-wide">
+                    PASES Y FRAGMENTOS
+                </h2>
+            </div>
+
+            <div class="grid gap-3" id="pases-list">
+                
+                <div onclick="selectProduct('PASES Y FRAGMENTOS', 'Pase Booyah / Pases', 1900, this)" class="product-card cursor-pointer bg-brand-cardBg border border-brand-cardBorder rounded-xl p-4 flex items-center justify-between transition-all duration-300 hover:border-brand-purple neon-border-purple">
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 rounded-lg bg-purple-950/60 border border-brand-purple/30 flex items-center justify-center text-brand-purple text-xl">
+                            
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-white text-base">Pase Booyah / Pases</h3>
+                            <p class="text-xs text-gray-400">Activación directa</p>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <span class="font-black text-lg text-emerald-400 font-gamer">$1.900</span>
+                        <p class="text-[10px] text-brand-purple font-semibold">Tocar para Elegir</p>
+                    </div>
+                </div>
+
+                <div class="bg-brand-cardBg border border-brand-cardBorder rounded-xl p-4 flex flex-col md:flex-row md:items-center justify-between gap-4 transition-all duration-300 hover:border-brand-purple neon-border-purple">
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 rounded-lg bg-purple-950/60 border border-brand-purple/30 flex items-center justify-center text-brand-purple text-xl">
+                            
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-white text-base">Fragmentos</h3>
+                            <p class="text-xs text-gray-400">Precio unitario: <span class="text-emerald-400 font-semibold">$90 c/u</span></p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between md:justify-end gap-4 border-t md:border-t-0 pt-3 md:pt-0 border-brand-cardBorder">
+                        <div class="flex items-center border border-brand-cardBorder rounded-lg bg-brand-darkBg">
+                            <button onclick="updateQuantity('fragQty', -1)" class="px-3 py-1 text-gray-300 hover:text-white font-bold text-lg">-</button>
+                            <input id="fragQty" type="number" value="1" min="1" readonly class="w-12 text-center bg-transparent text-white font-bold text-sm focus:outline-none">
+                            <button onclick="updateQuantity('fragQty', 1)" class="px-3 py-1 text-gray-300 hover:text-white font-bold text-lg">+</button>
+                        </div>
+                        <button onclick="selectCustomQuantityProduct('PASES Y FRAGMENTOS', 'Fragmentos', 90, 'fragQty', this)" class="bg-brand-purple/30 hover:bg-brand-purple text-purple-200 border border-brand-purple/50 px-4 py-2 rounded-lg text-xs font-bold transition">
+                            Seleccionar
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-brand-cardBg border border-brand-cardBorder rounded-xl p-4 flex flex-col md:flex-row md:items-center justify-between gap-4 transition-all duration-300 hover:border-brand-purple neon-border-purple">
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 rounded-lg bg-purple-950/60 border border-brand-purple/30 flex items-center justify-center text-brand-purple text-xl">
+                            
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-white text-base">Cajas EVOS</h3>
+                            <p class="text-xs text-gray-400">Precio unitario: <span class="text-emerald-400 font-semibold">$300 c/u</span></p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between md:justify-end gap-4 border-t md:border-t-0 pt-3 md:pt-0 border-brand-cardBorder">
+                        <div class="flex items-center border border-brand-cardBorder rounded-lg bg-brand-darkBg">
+                            <button onclick="updateQuantity('evoQty', -1)" class="px-3 py-1 text-gray-300 hover:text-white font-bold text-lg">-</button>
+                            <input id="evoQty" type="number" value="1" min="1" readonly class="w-12 text-center bg-transparent text-white font-bold text-sm focus:outline-none">
+                            <button onclick="updateQuantity('evoQty', 1)" class="px-3 py-1 text-gray-300 hover:text-white font-bold text-lg">+</button>
+                        </div>
+                        <button onclick="selectCustomQuantityProduct('PASES Y FRAGMENTOS', 'Cajas EVOS', 300, 'evoQty', this)" class="bg-brand-purple/30 hover:bg-brand-purple text-purple-200 border border-brand-purple/50 px-4 py-2 rounded-lg text-xs font-bold transition">
+                            Seleccionar
+                        </button>
+                    </div>
+                </div>
+
+      
